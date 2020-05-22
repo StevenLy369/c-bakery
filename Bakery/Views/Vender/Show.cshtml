@@ -9,6 +9,10 @@
 
 @foreach (Order order in @Model["orders"])
 {
- <p><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description</a></p>
+ <p><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Title</a></p>
 
 }
+
+<a href='/vendor/@Model["vendor"].Id/order/new'>Click to add new order</a>
+
+<a href ='/vendor'>Click to view vendors</a>

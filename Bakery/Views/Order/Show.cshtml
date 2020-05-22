@@ -1,5 +1,9 @@
+<h1>Current order at @Model["vendor"].Name</h1>
 
-<p>@Model["order"].Description</p>
-<p>@Model["order"].Date</p>
-<p>@Model["order"].Price</p>
-<p>@Model["order"].Title</p>
+<p>Title: @Model["order"].Title</p>
+<p>Description: @Model["order"].Description</p>
+<p>Date: @Model["order"].Date</p>
+
+<button class="btn"><a href='/vendor/@Model["vendor"].Id/order/new'>Add Another Order</a></button>
+<button class="btn"><a href="/vendor">Vendor List</a></button>
+<button class="btn"><a href="/">Home</a></button>

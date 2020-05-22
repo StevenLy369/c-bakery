@@ -11,7 +11,7 @@ namespace Bakery.TestTools
     {
         public void Dispose()
         {
-            Vendor.ClearAll();
+            Order.ClearAll();
         }
 
         [TestMethod]
@@ -21,6 +21,16 @@ namespace Bakery.TestTools
             
             Assert.AreEqual(typeof(Order), newOrder.GetType());
 
+        }
+        [TestMethod]
+        public void OrderConstructor_AddsOrdersTo_OrderList()
+        {
+             Order newOrder1 = new Order("asian", "3/4/3", 9, "wow");
+            Order newOrder2 = new Order("asian", "3/4/3", 9, "wow");
+            List<Order> newList = new List<Order> {newOrder1, newOrder2};
+
+            List<Order> result = Order.GetAll();
+            CollectionAssert.AreEqual(newList, result);
         }
 
         

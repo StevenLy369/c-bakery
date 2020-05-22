@@ -8,11 +8,11 @@ namespace Bakery.Models
         public string Name { get; set; }
       
         public List<Vendor> Items { get; set; }
-        public Vendor(string categoryName)
+        public Vendor(string name)
         {
-            Name = categoryName;
+            Name = name;
             _instances.Add(this);
-            Id = _instances.Count;
+           
             Items = new List<Vendor> { };
         }
 

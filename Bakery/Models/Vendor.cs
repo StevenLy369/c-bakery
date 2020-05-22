@@ -9,14 +9,14 @@ namespace Bakery.Models
         public string Description {get;set;}
         public int Id {get;set;}
       
-        public List<Vendor> Items { get; set; }
+        public List<Order> Orders { get; set; }
         public Vendor(string name, string description)
         {
             Name = name;
             Description = description;
             _instances.Add(this);
            Id = _instances.Count;
-            Items = new List<Vendor> { };
+            Orders = new List<Order>();
         }
 
 
@@ -33,6 +33,11 @@ namespace Bakery.Models
         public static Vendor Find(int searchId)
         {
             return _instances[searchId -1];
+        }
+
+        public void AddOrder(Order order)
+        {
+            Orders.Add(order);
         }
         
        

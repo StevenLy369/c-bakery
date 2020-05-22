@@ -1,4 +1,5 @@
-@* @foreach (var order in @Model["order"])
-{
-  <li><a href='/order/@Model["order"].Id/order/@order.Id'>@order.Description</a></li>
-} *@
+
+<p>@Model["order"].Description</p>
+<p>@Model["order"].Date</p>
+<p>@Model["order"].Price</p>
+<p>@Model["order"].Title</p>

@@ -1,7 +1,14 @@
-@foreach (var order in @Model["order"])
+@using Bakery.Models;
+
+<h1>Vendor info</h1>
+@if (@Model["orders"].Count == 0)
 {
-  <li><a href='/order/@Model["order"].Id/order/@order.Id'>@order.Description</a></li>
+  <p>This Vendor has no  orders!</p>
 }
 
 
-<h1>Vendor info</h1>
+@foreach (Order order in @Model["orders"])
+{
+ <p><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description</a></p>
+
+}

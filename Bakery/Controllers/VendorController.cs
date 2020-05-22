@@ -29,15 +29,14 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet("/vendor/{id}")]
-        public ActionResult Show(int id)
+        [HttpGet("/vendor/{vendorid}")]
+        public ActionResult Show(int vendorId)
         {
-            Vendor vendor = Vendor.Find(id);
-            List<Order> order = vendor.Orders;
             Dictionary<string, object> model = new Dictionary<string, object>();
+            Vendor vendor = Vendor.Find(vendorId);
+            List<Order> vendorOrders = vendor.Orders;
             model.Add("vendor", vendor);
-            model.Add("order", order);
-
+            model.Add("orders", vendorOrders);
             return View(model);
         }
     }

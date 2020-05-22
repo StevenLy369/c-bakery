@@ -3,14 +3,22 @@
 <h1>Add a New Order</h1>
 
 <form action='/vendor/@Model.Id/order' method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+ 
 
-  <label for="type">Order Type</label>
-  <input id="type" name="type" type="text" required>
+  <label for="description">Order Type</label>
+  <input id="description" name="description" type="text" required>
   <br>
 
-  <label for="quantity">Order Quantity</label>
-  <input id="quantity" name="quantity" type="number" required>
+  <label for="date">Date</label>
+  <input id="date" name="date" type="text" required>
+  <br>
+
+  <label for="Price">Price</label>
+  <input id="Price" name="Price" type="number" required>
+  <br>
+
+  <label for="Title">Title</label>
+  <input id="Title" name="Title" type="Text" required>
   <br>
 
   <button type="submit" class="btn">Add</button>
@@ -18,4 +26,4 @@
 
 
 <a href="/">Home</a>
-<a href="/vendors">Vendor List</a>
+<a href="/vendor">Vendor List</a>

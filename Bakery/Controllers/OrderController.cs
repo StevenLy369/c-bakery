@@ -24,8 +24,19 @@ namespace Bakery.Controllers
         [HttpPost("/order")]
         public ActionResult Create(string description, string date, int price, string title)
         {
-            Order myOrder = new Order(description, date,price,title);
+            Order myOrder = new Order(description, date, price, title);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
+        public ActionResult Show(int vendorId, int orderId)
+        {
+            Dictionary<string, object> model = new Dictionary<string, object> { };
+            Vendor vendor = Vendor.Find(vendorId);
+            Order order = Order.Find(orderId);
+            model.Add("vendor", vendor);
+            model.Add("order", order);
+            return View(model);
         }
     }
 }

@@ -26,3 +26,4 @@ C:\Users\Steven\Desktop\epi\c#\Bakery.Solution\Bakery\obj\Debug\netcoreapp2.2\Ra
 C:\Users\Steven\Desktop\epi\c#\Bakery.Solution\Bakery\obj\Debug\netcoreapp2.2\Razor\Views\Order\Show.g.cshtml.cs
 C:\Users\Steven\Desktop\epi\c#\Bakery.Solution\Bakery\obj\Debug\netcoreapp2.2\Razor\Views\Vender\Index.g.cshtml.cs
 C:\Users\Steven\Desktop\epi\c#\Bakery.Solution\Bakery\obj\Debug\netcoreapp2.2\Razor\Views\Vender\New.g.cshtml.cs
+C:\Users\Steven\Desktop\epi\c#\Bakery.Solution\Bakery\obj\Debug\netcoreapp2.2\Razor\Views\Vender\Show.g.cshtml.cs

@@ -1,5 +1,6 @@
 @using Bakery.Models;
-<h1>Add a New Order</h1>
+
+<h1>Add a New Order at @Model["vendor"].Name</h1>
 
 <form action='/vendor/@Model.Id/order' method="post">
 

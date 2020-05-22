@@ -19,7 +19,7 @@
 ## Specs
 | Spec | Input | OutPut |
 |:----------- | :-----------------| :---------------|
-|  | Input Vendor name: "Bob"  and Description: "cat" | Output: Bob |
+| Able to input vendor name | Input Vendor name: "Bob"  | Output: Bob |
 
 
 

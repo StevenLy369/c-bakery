@@ -1,4 +1,7 @@
 @using Bakery.Models;
+<link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+
+<body>
 
 <h1>Vendor info</h1>
 @if (@Model["orders"].Count == 0)
@@ -9,10 +12,13 @@
 
 @foreach (Order order in @Model["orders"])
 {
- <p><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Title</a></p>
+ <p>Order: <a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Title</a></p>
 
 }
 
 <button class="btn"><a href='/vendor/@Model["vendor"].Id/order/new'>Click to add new order</a></button>
 
 <button><a href ='/vendor'>Click to view vendors</a></button>
+
+
+</body>

@@ -21,7 +21,8 @@ namespace ToDoList
             services.AddMvc();
         }
         public void Configure(IApplicationBuilder app)
-        {
+        {   
+            app.UseStaticFiles();
             app.UseDeveloperExceptionPage();
             app.UseMvc(routes => 
             {

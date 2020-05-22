@@ -9,14 +9,14 @@ namespace Bakery.Controllers
     public class VenderController : Controller
     {
 
-       [HttpGet("/vendors")]
+       [HttpGet("/vendor")]
         public ActionResult Index()
         {
             List<Vendor> allVendor = Vendor.GetAll();
             return View(allVendor);
         }
 
-      [HttpGet("/vendors/new")]
+      [HttpGet("/vendor/new")]
       public ActionResult New()
       {
         return View();

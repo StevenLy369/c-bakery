@@ -21,5 +21,17 @@ namespace Bakery.TestTools
             Assert.AreEqual(typeof(Vendor), newVendor.GetType());
 
         }
+
+        [TestMethod]
+        public void VendorConstructor_AddsVendorsTo_VendorList()
+        {
+            Vendor newVendor1 = new Vendor("Bob", "asian");
+            Vendor newVendor2 = new Vendor("Rob", "american");
+            List<Vendor> newList = new List<Vendor> {newVendor1, newVendor2};
+
+            List<Vendor> result = Vendor.GetAll();
+            CollectionAssert.AreEqual(newList, result);
+        }
+
     }
 }

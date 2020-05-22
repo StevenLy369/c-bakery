@@ -1,1 +1,4 @@
-<h1>Order show</h1>
+@foreach (var order in @Model["order"])
+{
+  <li><a href='/order/@Model["order"].Id/order/@order.Id'>@order.Description</a></li>
+}

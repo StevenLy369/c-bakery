@@ -3,13 +3,13 @@
 <h1>Vendor</h1>
 
 
- <ul>
+ @* <ul>
   @foreach (Vendor vendor in Model)
   {
-    <li><a href='/vendor/@vendor.Id'>@vendor.Name </a></li>
+    <li><a href='/vendor/@Model["order"].Id/order/new'>@vendor.Name </a></li>
     
   }
-</ul>
+</ul> *@
 
 
 <a href="/vendor/new">Add New Vendor!</a>

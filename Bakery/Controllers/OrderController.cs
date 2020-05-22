@@ -22,7 +22,7 @@ namespace Bakery.Controllers
 
 
         [HttpPost("/order")]
-        public ActionResult Create(string description, int date, int price, string title)
+        public ActionResult Create(string description, string date, int price, string title)
         {
             Order myOrder = new Order(description, date,price,title);
             return RedirectToAction("Index");

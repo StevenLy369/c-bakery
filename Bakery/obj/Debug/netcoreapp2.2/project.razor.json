@@ -2961,33 +2961,38 @@
   "RootNamespace": "Bakery",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Order\\New.cshtml",
+      "TargetPath": "Views\\Order\\New.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Order\\Index.cshtml",
+      "TargetPath": "Views\\Order\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Orders\\Index.cshtml",
-      "TargetPath": "Views\\Orders\\Index.cshtml",
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Vender\\Index.cshtml",
+      "TargetPath": "Views\\Vender\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Orders\\New.cshtml",
-      "TargetPath": "Views\\Orders\\New.cshtml",
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Vender\\Show.cshtml",
+      "TargetPath": "Views\\Vender\\Show.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Vendors\\Index.cshtml",
-      "TargetPath": "Views\\Vendors\\Index.cshtml",
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Order\\Show.cshtml",
+      "TargetPath": "Views\\Order\\Show.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Vendors\\New.cshtml",
-      "TargetPath": "Views\\Vendors\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Orders\\Show.cshtml",
-      "TargetPath": "Views\\Orders\\Show.cshtml",
+      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Vender\\New.cshtml",
+      "TargetPath": "Views\\Vender\\New.cshtml",
       "FileKind": "mvc"
     }
   ],

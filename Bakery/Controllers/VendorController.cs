@@ -29,22 +29,16 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
-        // [HttpPost("/vendor/{Id}/order/new")]
-        // public ActionResult Create(string description, string date, int price, string title)
-        // {
-        //   Order myOrder = new Order (description, date, price, title);
-        //   return View(myOrder);
-        // }
+        [HttpGet("/vendor/{id}")]
+        public ActionResult Show(int id)
+        {
+            Vendor vendor = Vendor.Find(id);
+            List<Order> order = vendor.Orders;
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            model.Add("vendor", vendor);
+            model.Add("order", order);
 
-        // [HttpGet("/vendor/{orderId}/order/{orderId}")]
-        // public ActionResult Create(string order)
-        // {
-            
-        //     List<Order> addOrder= Vendor.AddOrder(order);
-            
-           
-           
-        //     return View(addOrder);
-        // }
+            return View(model);
+        }
     }
 }

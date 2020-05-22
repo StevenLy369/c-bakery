@@ -2966,11 +2966,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Order\\Index.cshtml",
-      "TargetPath": "Views\\Order\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Steven\\Desktop\\epi\\c#\\Bakery.Solution\\Bakery\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

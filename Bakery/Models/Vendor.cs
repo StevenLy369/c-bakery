@@ -6,11 +6,13 @@ namespace Bakery.Models
     {
         private static List<Vendor> _instances = new List<Vendor> { };
         public string Name { get; set; }
+        public string Description {get;set;}
       
         public List<Vendor> Items { get; set; }
-        public Vendor(string name)
+        public Vendor(string name, string description)
         {
             Name = name;
+            Description = description;
             _instances.Add(this);
            
             Items = new List<Vendor> { };
